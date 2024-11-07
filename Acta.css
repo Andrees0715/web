@@ -1,0 +1,16 @@
+body{
+    background-image: url("Conteo.jpg");
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20;
+}
+
+.boton {
+    display: block;
+    border-radius: 5px;
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: red;
+}

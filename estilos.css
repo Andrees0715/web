@@ -1,0 +1,105 @@
+body{
+    background-image: url("Fondo.jpg");
+}
+
+.boton2{
+    display: block;
+    width: 200px;
+    height: 70px;
+    font-size: 35px;
+    font-family: Arcade, Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: blue;
+}
+
+.boton1{
+    display: block;
+    width: 200px;
+    height: 70px;
+    font-size: 35px;
+    font-family: Arcade, Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: red;
+}
+
+.boton3{
+    display: block;
+    width: 200px;
+    height: 70px;
+    font-size: 35px;
+    font-family: Arcade, Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.control1{
+    display: block;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blue;
+    background-color: greenyellow;
+    position: absolute;
+    top: 350px;
+    right: 40px;
+}
+
+.control2{
+    display: block;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    background-color: yellow;
+    position: absolute;
+    top: 350px;
+    right: 200px;
+}
+
+.control3{
+    display: block;
+    width: auto;
+    height: 50px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    background-color: rgba(0, 174, 255, 0.671);
+    position: absolute;
+    top: 500px;
+    left: 100px;
+}
+
+table{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+.resultados td input{
+    display: block;
+    width: 110px;
+    height: 30px;
+    font-size: 28px;
+    border: 0;
+    text-align: center;
+    color: black;
+}
+
+.resultados{
+    border: 1;
+    text-align: center;
+}
+
+.siglasB{
+    font-size: 25px;
+    color: blue;
+    font-family: fantasy;
+}
+
+.siglasA{
+    font-size: 25px;
+    color: red;
+    font-family: fantasy;
+}

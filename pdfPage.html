@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULTADOS</title>
+    <link rel="stylesheet" href="Acta.css">
+</head>
+<body>
+    <h1><center>RESULTADOS FINALES ELECCIONES 2024</center></h1>
+    <br>
+    
+    <input type="text" placeholder="Número de Mesa y Género" id="Mesa" style="width : 160px; height : 20px"><br><br>
+    <input type="text" placeholder="Nombre del Presidente de la Mesa" id="Presidente" style="width : 200px; height : 20px"><br><br>
+    <input type="text" placeholder="Votos validos LISTA A" id="Lista1" style="width : 130px; height : 20px"><br><br>
+    <input type="text" placeholder="Votos validos LISTA B" id="Lista2" style="width : 130px; height : 20px"><br><br>
+    <input type="text" placeholder="Votos NULOS" id="Nulos" style="width : 130px; height : 20px"><br><br>
+    <input type="text" placeholder="LISTA GANADORA EN ESTA MESA" id="Ganador" style="width : 200px; height : 20px"><br><br>
+    <input type="text" placeholder="OBSERVACIONES" id="Observacion" style="width : 500px; height : 20px"><br><br>
+    
+    <a href="javascript:genPDF()" class ="boton">GENERAR ACTA</a>
+    <script type="text/javascript" src="jspdf.min.js"></script>
+    <script type="text/javascript">
+        function genPDF(){
+            var doc=new jsPDF();
+            doc.text(55,10,"UNIDAD EDUCATIVA ELOY ALFARO");
+            doc.text(10,20,"RESULTADOS PARCIALES ELECCIONES CONSEJO ESTUDIANTIL 2024");
+
+            doc.text(10,50,"NÚMERO DE MESA Y GÉNERO:");
+            let box1=document.getElementById('Mesa').value;
+            doc.text(120,50,box1);
+            doc.text(10,60,"PRESIDENTE DE LA MESA:");
+            let box2=document.getElementById('Presidente').value;
+            doc.text(120,60,box2);
+            doc.text(10,70,"VOTOS VÁLIDOS LISTA A:");
+            let box3=document.getElementById('Lista1').value;
+            doc.text(120,70,box3);
+            doc.text(10,80,"VOTOS VÁLIDOS LISTA B:");
+            let box4=document.getElementById('Lista2').value;
+            doc.text(120,80,box4);
+            doc.text(10,90,"VOTOS NULOS:");
+            let box5=document.getElementById('Nulos').value;
+            doc.text(120,90,box5);
+            doc.text(10,100,"LISTA GANADORA EN ESTA MESA:");
+            let box6=document.getElementById('Ganador').value;
+            doc.text(120,100,box6);
+            doc.text(10,110,"OBSERVACIONES:");
+            let box7=document.getElementById('Observacion').value;
+            doc.text(120,110,box7);
+
+            doc.text(10,160,"Prof. Fausto Cruz P.");
+            doc.text(10,170,"PRESIDENTE DEL");
+            doc.text(10,180,"TRIBUNAL ELECTORAL");
+            doc.text(120,170,"PRESIDENTE DE LA:");
+            let box8=document.getElementById('Presidente').value;
+            doc.text(120,160,box8);
+            let box9=document.getElementById('Mesa').value;
+            doc.text(120,180,box9);
+            doc.save('Resultados.pdf');
+        }
+    </script>
+</body>
+</html>
